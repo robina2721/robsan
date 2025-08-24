@@ -45,10 +45,10 @@ const projects = [
   {
     title: "Dynamic Web Application",
     description: "Full-stack web application with real-time features, user authentication, and responsive design using modern technologies.",
-    tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    tech: ["HTML", "CSS", "JavaScript",],
     github: "https://github.com",
     live: "https://example.com",
-    image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=250&fit=crop"
+    Image: "codex.jpg"
   },
   {
     title: "Database Management System",
@@ -153,9 +153,9 @@ export default function HomePage() {
   const y2 = useTransform(scrollY, [0, 300], [0, -100]);
 
   // Preload hero image for faster loading
-  useEffect(() => {
-    preloadImage('https://cdn.builder.io/api/v1/image/assets%2F9750540b78c646d2a475c71aa9567927%2F98d04842338d4350819356c973f4d52a?format=webp&width=800');
-  }, []);
+  // useEffect(() => {
+  //   preloadImage('https://cdn.builder.io/api/v1/image/assets%2F9750540b78c646d2a475c71aa9567927%2F98d04842338d4350819356c973f4d52a?format=webp&width=800');
+  // }, []);
 
   const scrollToSection = useCallback((id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -321,7 +321,7 @@ export default function HomePage() {
               >
                 <div className="relative">
                   <Image
-                    src="/assets/robsan.png"
+                    src="robsan.png"
                     alt="Software Engineer"
                     width={400}
                     height={600}

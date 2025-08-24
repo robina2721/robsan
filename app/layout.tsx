@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: 'Dynamic Portfolio - Software Engineer',
   description: 'A dynamic portfolio showcasing software engineering skills including web development, video editing, project management, and cloud architecture.',
   keywords: ['software engineer', 'web developer', 'video editor', 'project manager', 'cloud architect', 'portfolio'],
-  authors: [{ name: 'Portfolio Owner' }],
+  authors: [{ name: 'Robsan Demisew' }],
   openGraph: {
     title: 'Dynamic Portfolio - Software Engineer',
     description: 'A dynamic portfolio showcasing software engineering skills',

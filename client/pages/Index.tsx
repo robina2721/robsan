@@ -45,7 +45,9 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/robina2721/codex-bookstoreWeb.git",
     live: "https://robina2721.github.io/codex-bookstoreWeb/", 
-    image: "codex.jpg"
+    Image : "/image/codex.jpg"  ,alt:"codex"
+
+
   },
   {
     title: "Database Management System",
@@ -149,9 +151,9 @@ export default function Index() {
   const y2 = useTransform(scrollY, [0, 300], [0, -100]);
 
   // Preload hero image for faster loading
-  useEffect(() => {
-    preloadImage('https://cdn.builder.io/api/v1/image/assets%2F9750540b78c646d2a475c71aa9567927%2F98d04842338d4350819356c973f4d52a?format=webp&width=800');
-  }, []);
+  // useEffect(() => {
+  //   preloadImage('https://cdn.builder.io/api/v1/image/assets%2F9750540b78c646d2a475c71aa9567927%2F98d04842338d4350819356c973f4d52a?format=webp&width=800');
+  // }, []);
 
   const scrollToSection = useCallback((id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -317,8 +319,8 @@ export default function Index() {
               >
                 <div className="relative">
                   <img
-                    src="robsan.png"
-                    alt="Software Engineer"
+                    src="/image/robsan.png"
+                    alt="rob"
                     className="w-full max-w-md mx-auto rounded-2xl shadow-2xl animate-float"
                     loading="lazy"
                     decoding="async"
