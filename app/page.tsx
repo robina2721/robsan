@@ -321,7 +321,7 @@ export default function HomePage() {
               >
                 <div className="relative">
                   <Image
-                    src="https://cdn.builder.io/api/v1/image/assets%2F9750540b78c646d2a475c71aa9567927%2F98d04842338d4350819356c973f4d52a?format=webp&width=800"
+                    src="/assets/robsan.png"
                     alt="Software Engineer"
                     width={400}
                     height={600}
@@ -628,8 +628,8 @@ export default function HomePage() {
           >
             <motion.div variants={fadeInUp} className="space-y-6">
               {[
-                { icon: Mail, title: "Email", detail: "your.email@example.com", color: "#EA4335" },
-                { icon: MapPin, title: "Location", detail: "Your City, Country", color: "#4285F4" },
+                { icon: Mail, title: "Email", detail: "robsanyeabsra@gmail.com", color: "#EA4335" },
+                { icon: MapPin, title: "Location", detail: "Addis Ababa, Ethiopia", color: "#4285F4" },
                 { icon: Calendar, title: "Availability", detail: "Open to new opportunities", color: "#34A853" }
               ].map((item, index) => (
                 <motion.div 
@@ -713,7 +713,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              © 2024 Portfolio. Made with ❤️ and lots of ☕
+              © 2025 Robsan Demisew All Rights Reserved
             </motion.p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
