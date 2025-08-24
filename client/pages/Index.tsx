@@ -40,13 +40,15 @@ const skills = [
 
 const projects = [
   {
-    title: "Responsive BookStore Website",
-    description: "Full-stack web application with real-time features, user authentication, and responsive design using modern technologies.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/robina2721/codex-bookstoreWeb.git",
-    live: "https://robina2721.github.io/codex-bookstoreWeb/", 
-    Image : "/image/codex.jpg"  ,alt:"codex"
-
+    
+  title: "Responsive BookStore Website",
+  description: "Full-stack web application with real-time features, user authentication, and responsive design using modern technologies.",
+  tech: ["HTML", "CSS", "JavaScript"],
+  github: "https://github.com/robina2721/codex-bookstoreWeb.git",
+  live: "https://robina2721.github.io/codex-bookstoreWeb/", 
+   image: "/robsan/image/codex.jpg",  // <-- ✅ this is the correct path
+    alt: "codex"
+ 
 
   },
   {
@@ -203,6 +205,7 @@ export default function Index() {
             </div>
             <div className="flex items-center gap-2">
               <ThemeToggle />
+               <a href="/robsan/Robsan-Demisew.pdf" download>
               <Button
                 variant="outline"
                 size="sm"
@@ -211,10 +214,13 @@ export default function Index() {
                 <Download className="w-4 h-4" />
                 Resume
               </Button>
+              </a>
             </div>
           </div>
         </div>
       </motion.nav>
+
+      
 
       {/* Hero Section */}
       <section className="pt-20 pb-16 px-6 relative">
@@ -319,8 +325,8 @@ export default function Index() {
               >
                 <div className="relative">
                   <img
-                    src="/image/robsan.png"
-                    alt="rob"
+                    src="/robsan/image/robsan.png"
+                    alt="robsan"
                     className="w-full max-w-md mx-auto rounded-2xl shadow-2xl animate-float"
                     loading="lazy"
                     decoding="async"
@@ -625,8 +631,8 @@ export default function Index() {
           >
             <motion.div variants={fadeInUp} className="space-y-6">
               {[
-                { icon: Mail, title: "Email", detail: "your.email@example.com", color: "#EA4335" },
-                { icon: MapPin, title: "Location", detail: "Your City, Country", color: "#4285F4" },
+                { icon: Mail, title: "Email", detail: "robsanyeabsra.com", color: "#EA4335" },
+                { icon: MapPin, title: "Location", detail: "Addis Ababa, Ethiopia", color: "#4285F4" },
                 { icon: Calendar, title: "Availability", detail: "Open to new opportunities", color: "#34A853" }
               ].map((item, index) => (
                 <motion.div 
