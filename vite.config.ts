@@ -5,6 +5,7 @@ import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base:'https://github.com/robina2721/robsan.git',
   server: {
     host: "::",
     port: 8080,
@@ -13,6 +14,7 @@ export default defineConfig(({ mode }) => ({
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
   },
+  
   build: {
     outDir: "dist/spa",
   },
