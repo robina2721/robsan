@@ -46,7 +46,7 @@ const projects = [
   tech: ["HTML", "CSS", "JavaScript"],
   github: "https://github.com/robina2721/codex-bookstoreWeb.git",
   live: "https://robina2721.github.io/codex-bookstoreWeb/", 
-   image: "/robsan/image/codex.jpg",  // <-- ✅ this is the correct path
+   image: "/robsan/image/codex.jpg",  
     alt: "codex"
  
 
@@ -327,7 +327,7 @@ export default function Index() {
                   <img
                     src="/robsan/image/robsan.png"
                     alt="robsan"
-                    className="w-full max-w-md mx-auto rounded-2xl shadow-2xl animate-float"
+                    className=""
                     loading="lazy"
                     decoding="async"
                   />
