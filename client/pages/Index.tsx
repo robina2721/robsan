@@ -323,14 +323,11 @@ export default function Index() {
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
               >
-                <div className="relative">
-                  <img
-                    src="/robsan/image/robsan.png"
-                    alt="robsan"
-                    className=""
-                    loading="lazy"
-                    decoding="async"
-                  />
+               <div className="relative">
+              <img src="/robsan/image/robsan.png" alt="robsan" className="relative z-10" />
+            <div className="absolute inset-0 bg-primary/10 mix-blend-soft-light z-0" />
+               </div>
+
                   <motion.div
                     className="absolute -top-2 -right-2 p-2 bg-primary rounded-full animate-bounce-in"
                     animate={{ rotate: 360 }}
@@ -358,9 +355,12 @@ export default function Index() {
         </motion.div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-6 bg-muted/50 relative">
-        <div className="container mx-auto">
+                   {/* About Section */}
+                        <section
+                          id="about"
+                          className="mt-32 py-20 px-6 bg-muted/50 relative"
+                        >
+                  <div className="container mx-auto">
           <motion.div
             variants={staggerContainer}
             initial="initial"
