@@ -335,7 +335,7 @@ export default function Index() {
                   >
                     <Star className="w-6 h-6 text-primary-foreground" />
                   </motion.div>
-                </div>
+               
               </motion.div>
               <motion.div
                 className="absolute -top-4 -right-4 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse-glow"
@@ -664,41 +664,85 @@ export default function Index() {
                     Send me a message
                   </CardTitle>
                   <CardDescription>
-                    I'll get back to you faster than you can say "Hello World!"
+                    I'll get back to you faster than you can say "Hello World!
+                    Well, That's My Job😁"
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <input
-                      type="text"
-                      placeholder="First name"
-                      className="px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:animate-pulse-glow transition-all duration-300"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Last name"
-                      className="px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:animate-pulse-glow transition-all duration-300"
-                    />
-                  </div>
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:animate-pulse-glow transition-all duration-300"
-                  />
-                  <textarea
-                    placeholder="Message"
-                    rows={4}
-                    className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:animate-pulse-glow resize-none transition-all duration-300"
-                  />
-                  <Button className="w-full hover:animate-bounce-in group">
-                    <motion.span 
-                      className="flex items-center gap-2"
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      Send Message
-                      <Send className="w-4 h-4 group-hover:animate-bounce" />
-                    </motion.span>
-                  </Button>
+                  <form action="https://formsubmit.co/robsanyeabsra@gmail.com" method="POST">
+                    <div className="grid grid-cols-2 gap-4">
+  <div className="flex flex-col space-y-1">
+    <label htmlFor="firstName" className="text-sm text-gray-700 dark:text-gray-300">First name</label>
+    <input
+      type="text"
+      id="firstName"
+      placeholder="First name"
+      className="px-3 py-2 border border-input rounded-md bg-background text-green-700 dark:text-green-300 placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:animate-pulse-glow transition-all duration-300"
+      name="firstName"
+      required
+    />
+  </div>
+  <div className="flex flex-col space-y-1">
+    <label htmlFor="lastName" className="text-sm text-gray-700 dark:text-gray-300">Last name</label>
+    <input
+      type="text"
+      id="lastName"
+      placeholder="Last name"
+      className="px-3 py-2 border border-input rounded-md bg-background text-green-700 dark:text-green-300 placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:animate-pulse-glow transition-all duration-300"
+      name="lastName"
+      required
+    />
+  </div>
+</div>
+
+<div className="flex flex-col space-y-1 mt-4">
+  <label htmlFor="email" className="text-sm text-gray-700 dark:text-gray-300">Email</label>
+  <input
+    type="email"
+    id="email"
+    placeholder="Email"
+    className="w-full px-3 py-2 border border-input rounded-md bg-background text-green-700 dark:text-green-300 placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:animate-pulse-glow transition-all duration-300"
+    name="email"
+    required
+  />
+</div>
+
+<div className="flex flex-col space-y-1 mt-4">
+  <label htmlFor="phone" className="text-sm text-gray-700 dark:text-gray-300">Phone Number</label>
+  <input
+    type="tel"
+    id="phone"
+    placeholder="+251 9XX XXX XXX"
+    className="w-full px-3 py-2 border border-input rounded-md bg-background text-green-700 dark:text-green-300 placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:animate-pulse-glow transition-all duration-300"
+    name="phone"
+    required
+  />
+</div>
+
+
+<div className="flex flex-col space-y-1 mt-4">
+  <label htmlFor="message" className="text-sm text-gray-700 dark:text-gray-300">Message</label>
+  <textarea
+    id="message"
+    placeholder="Message"
+    rows={4}
+    className="w-full px-3 py-2 border border-input rounded-md bg-background text-green-700 dark:text-green-300 placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:animate-pulse-glow resize-none transition-all duration-300"
+    name="message"
+    required
+  />
+</div>
+
+<Button className="w-full mt-6 hover:animate-bounce-in group" type="submit">
+  <motion.span 
+    className="flex items-center gap-2"
+    whileHover={{ scale: 1.05 }}
+  >
+    Send Message
+    <Send className="w-4 h-4 group-hover:animate-bounce" />
+  </motion.span>
+</Button>
+
+                  </form>
                 </CardContent>
               </Card>
             </motion.div>
@@ -716,7 +760,7 @@ export default function Index() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              © 2025 Portfolio. Robsan Demisew 
+              © 2025 Portfolio. Robsan Demisew All rights reserved.
             </motion.p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
