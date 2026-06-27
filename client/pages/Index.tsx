@@ -205,7 +205,7 @@ export default function Index() {
             </div>
             <div className="flex items-center gap-2">
               <ThemeToggle />
-               <a href="/robsan/Robsan-Demisew.pdf" download>
+               <a href="/robsan/robacv.pdf" download>
               <Button
                 variant="outline"
                 size="sm"
@@ -760,7 +760,7 @@ export default function Index() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              © 2025 Portfolio. Robsan Demisew All rights reserved.
+              © 2026 Portfolio. Robsan Demisew All rights reserved.
             </motion.p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
